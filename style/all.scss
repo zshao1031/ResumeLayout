@@ -1,0 +1,274 @@
+/*===========================*/
+/*【變數設定】*/
+
+/*使用顏色*/
+$color_White: #ffffff;  
+$color_Black: #000000;
+$color_Red: #A00404;
+$color_LightGray: #96A9C4;
+$color_DarkGray: #415165;
+$color_Blue: #96E9F6;
+
+/*使用字體粗細*/
+$fw_Light: 300;
+$fw_Regular: 400;
+$fw_Medium: 500;
+
+/*===========================*/
+/*【通用設定】*/
+
+/*使padding與border不會增加總寬度*/
+*,*:before,*:after{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/*版面水平置中容器*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*字型設定*/
+body{
+    font-family: 'Roboto','Noto Sans TC', sans-serif;
+}
+
+/*===========================*/
+
+/*主標題(英文名字)*/
+h1{
+    font-size: 80px;
+    line-height: 94px;
+    padding-bottom: 17px;
+    border-bottom: 2px solid $color_Black;
+}
+
+/*個人照片*/
+.photo{
+    width: 324px;
+    height: 324px;
+    border-radius: 50%;
+    background-image: url(../image/photo.png);
+}
+
+/*單元標題(通用)*/
+.title{
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color_Black;
+    display: flex;
+    flex-direction: row;
+
+    h2{
+        font-size: 32px;
+        line-height: 43px;
+        color: $color_Black;
+        font-weight: $fw_Regular;
+    }
+
+    h3{
+        font-size: 24px;
+        line-height: 43px;
+        color: $color_Red;
+        margin-left: 16px;
+        font-weight: $fw_Medium;
+    }
+}
+
+/*個人資料、學歷_內文*/
+.profileList li, .educationList li{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: $fw_Regular;
+}
+
+/*===========================*/
+/*技能區_背景*/
+.skillBg{
+    background: $color_DarkGray;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+
+/*技能區_標題*/
+.skillTitle{
+    max-width: 996px;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color_White;
+    display: flex;
+    justify-content: center;
+
+    h2, h3{
+        line-height: 45px;
+        color: $color_White;
+        font-weight: $fw_Medium;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 24px;
+        margin-left: 16px;
+    }
+}
+
+/*技能區_內文*/
+.skillList{
+    margin: 0 auto;
+    width: 250px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 1px solid $color_LightGray;
+
+    li{
+        font-size: 24px;
+        line-height: 28px;
+        color: $color_White;
+        font-weight: $fw_Light;
+    }
+}
+
+/*===========================*/
+
+/*工作經驗_內文*/
+.workList{
+    margin-left: 24px;
+    border-left: 1px solid $color_LightGray;
+
+    li{
+        margin-left: 24px;
+        width: 630px;
+
+        h4{
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: $fw_Regular;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: $fw_Regular;
+        }
+    }
+
+}
+
+/*工作經驗_Logo*/
+.hexSchoolLogo{
+    width: 90px;
+    height: 90px;
+    background-image: url(../image/hexschool.svg);
+}
+
+.simtreeLogo{
+    width: 90px;
+    height: 90px;
+    background-image: url(../image/simtree.png);
+}
+
+/*===========================*/
+/*聯絡區_背景*/
+footer{
+    background: $color_DarkGray;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+
+/*聯絡區_標題*/
+.footerTitle{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color_White;
+    display: flex;
+    justify-content: center;
+
+    h2, h3{
+        line-height: 45px;
+        color: $color_White;
+        font-weight: $fw_Medium;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 28px;
+        margin-left: 16px;
+    }
+}
+
+/*聯絡區_內文*/
+.contactList li{
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: $fw_Light;
+    color: $color_White;
+    text-align: center;
+
+    a{
+        color: $color_White;
+
+        &:hover{
+            color: $color_Blue;
+        }
+    }
+}
+
+/*聯絡區_社群網站*/
+.snsIcon{
+    display: flex;
+    justify-content: center;
+
+    li a{
+        display: block;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.fbIcon{
+    background-image: url(../image/facebook.svg);
+
+    &:hover{
+        background-image: url(../image/facebook_hover.svg);
+    }
+}
+
+.igIcon{
+    background-image: url(../image/instagram.svg);
+    margin-left: 24px;
+    
+    &:hover{
+        background-image: url(../image/instagram_hover.svg);
+    }
+}
+
+.lineIcon{
+    background-image: url(../image/line.svg);
+    margin-left: 24px;
+
+    &:hover{
+        background-image: url(../image/line_hover.svg);
+    }
+}
+
+/*===========================*/
+/*【統一向上推出空間設定】*/
+.mt-8{margin-top: 8px;}
+.mt-16{margin-top: 16px;}
+.mt-20{margin-top: 20px;}
+.mt-24{margin-top: 24px;}
+.mt-32{margin-top: 32px;}
+.mt-40{margin-top: 40px;}
+.mt-47{margin-top: 47px;}
+.mt-48{margin-top: 48px;}
+.mt-72{margin-top: 72px;}
+/*※放在最後面是因為這樣才不會被有設margin:0 auto;的蓋掉*/
+/*===========================*/
