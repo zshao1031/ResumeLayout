@@ -22,6 +22,11 @@ body {
   font-family: 'Roboto','Noto Sans TC', sans-serif;
 }
 
+/*使圖片不會在下方多出2~3px空間*/
+img {
+  vertical-align: middle;
+}
+
 /*===========================*/
 /*主標題(英文名字)*/
 h1 {
@@ -33,38 +38,26 @@ h1 {
 
 /*個人照片*/
 .photo {
-  width: 324px;
-  height: 324px;
   border-radius: 50%;
-  background-image: url(../image/photo.png);
 }
 
 /*單元標題(通用)*/
-.title {
+h2 {
   padding-bottom: 8px;
   border-bottom: 1px solid #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.title h2 {
   font-size: 32px;
   line-height: 43px;
   color: #000000;
   font-weight: 400;
 }
 
-.title h3 {
+h2 span {
   font-size: 24px;
-  line-height: 43px;
+  line-height: inherit;
   color: #A00404;
   margin-left: 16px;
   font-weight: 500;
+  vertical-align: top;
 }
 
 /*個人資料、學歷_內文*/
@@ -88,27 +81,20 @@ h1 {
   margin: 0 auto;
   padding-bottom: 8px;
   border-bottom: 1px solid #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.skillTitle h2, .skillTitle h3 {
   line-height: 45px;
   color: #ffffff;
   font-weight: 500;
-}
-
-.skillTitle h2 {
   font-size: 32px;
+  text-align: center;
 }
 
-.skillTitle h3 {
+.skillTitle span {
+  line-height: inherit;
+  color: #ffffff;
+  font-weight: 500;
   font-size: 24px;
   margin-left: 16px;
+  vertical-align: top;
 }
 
 /*技能區_內文*/
@@ -139,7 +125,7 @@ h1 {
   width: 630px;
 }
 
-.workList li h4 {
+.workList li h3 {
   font-size: 24px;
   line-height: 34px;
   font-weight: 400;
@@ -151,19 +137,6 @@ h1 {
   font-weight: 400;
 }
 
-/*工作經驗_Logo*/
-.hexSchoolLogo {
-  width: 90px;
-  height: 90px;
-  background-image: url(../image/hexschool.svg);
-}
-
-.simtreeLogo {
-  width: 90px;
-  height: 90px;
-  background-image: url(../image/simtree.png);
-}
-
 /*===========================*/
 /*聯絡區_背景*/
 footer {
@@ -173,30 +146,22 @@ footer {
 }
 
 /*聯絡區_標題*/
-.footerTitle {
+.contactTitle {
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 8px;
   border-bottom: 1px solid #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footerTitle h2, .footerTitle h3 {
+  font-size: 32px;
   line-height: 45px;
   color: #ffffff;
   font-weight: 500;
+  text-align: center;
 }
 
-.footerTitle h2 {
-  font-size: 32px;
-}
-
-.footerTitle h3 {
+.contactTitle span {
+  line-height: inherit;
+  color: #ffffff;
+  font-weight: 500;
   font-size: 28px;
   margin-left: 16px;
 }
